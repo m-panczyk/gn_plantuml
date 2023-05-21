@@ -2,18 +2,30 @@
 # Sytnax reference: https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
 
 name: Plant UML Diagram Generator
+on: [push]
 
-on:
-  push:
-    branches: [ master ]
 jobs:
-  build:
+  render_drawio:
     runs-on: ubuntu-latest
+    name: Render PlantUML files
     steps:
-      - uses: actions/checkout@v2
-      - name: generate and commit diagrams
-        uses: abekoh/commit-plantuml-action@1.0.3
-        with:
-          botEmail: ${{ secrets.BOT_EMAIL }}
-          botGithubToken: ${{ secrets.token }}
-          enableReviewComment: true
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Render PlantUML files
+      uses: ghcr.io/racklet/render-plantuml-action@v1
+      id: render
+      with: # Showcasing the default values here
+        formats: 'png'
+        sub-dirs: '.'
+        skip-dirs: '.git'
+        # files: '' # unset, specify "dest-file:src-file" mappings here
+        log-level: 'info'
+    - name: Print the rendered files
+      run: 'echo "The following files were generated: ${{ steps.render.outputs.rendered-files }}"'
+    - uses: EndBug/add-and-commit@v7
+      with:
+        # This "special" author name and email will show up as the GH Actions user/bot in the UI
+        author_name: github-actions
+        author_email: 41898282+github-actions[bot]@users.noreply.github.com
+        message: 'Automatically render PlantUML files'
+        add: "${{ steps.render.outputs.rendered-files }}"
