@@ -12,7 +12,7 @@ rectangle Aplikacja as app {
     }
     (System Zleceń) as sz
     (System Użytkowników) as su
-    database "Notatki" as dbn
+    database "Notatki" as notes
 
     user --> add :notatka
     user <-- show :notatka na mapie
@@ -20,11 +20,11 @@ rectangle Aplikacja as app {
     user --> del :notatka
     user <--> edit :notatka
     user <--> assign :notatka
-    add <-d-> dbn :notatka
-    del <-d-> dbn :notatka
-    edit <-d-> dbn :notatka
-    assign <-d-> dbn :notatka
-    show <-d- dbn :notatka
+    add <-d-> notes :notatka
+    del <-d-> notes :notatka
+    edit <-d-> notes :notatka
+    assign <-d-> notes :notatka
+    show <-d- notes :notatka
     sz -u-> assign :zlecenie
     su -u-> del :uprawnienia
     su -u-> edit :uprawnienia
