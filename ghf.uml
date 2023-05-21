@@ -1,0 +1,26 @@
+@startwbs>
++ Aplikacja do tworzenia notatek z geotagami
+++ Zarządzanie notatkami
++++ Dodawanie notatki
++++ Edycja notatki
++++ Usuwanie notatki
++++ Wyszukiwanie notatek
+++ Zarządzanie grupami
++++ Tworzenie grupy
++++ Usuwanie grupy
++++ Ustawianie uprawnień grupy
++++ Edycja członków grupy
+++++ Dodawanie użytkowników do grupy
+++++ Usuwanie użytkowników do grupy
+++ Zarządzanie użytkownikami
++++ Dodawanie użytkownika
++++ Usuwanie użytkownika
++++ Edycja użytkownika
++++ Ustawianie uprawnień użytkownika
+++ Ustawienia aplikacji
++++ Ustawienia lokalizacji
++++ Ustawienia połączenia z serwerem
++++ Ustawienia wyglądu
++++ Przełączanie/logowanie użytkownika
++++ Tworzenie kopii zapasowej
+@endwbs>

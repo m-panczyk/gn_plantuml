@@ -1,0 +1,15 @@
+@startuml
+skinparam packageStyle rect
+(Użytkownik) as user
+(Administrator) as admin
+(Dostawca map) as data
+(zewnętrzny system zleceń) as sys
+rectangle (Aplikacja) as app {
+user -l-> app: notatka
+user <-l- app: notatka
+admin -r-> app: konfiguracja
+admin <-r- app: konfiguracja
+data -u-> app : mapa
+sys -d-> app : zlecenie
+
+@enduml

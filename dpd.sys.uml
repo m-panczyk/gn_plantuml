@@ -1,0 +1,24 @@
+@startuml
+rectangle "Użytkownik" as user
+rectangle "Administrator" as admin
+rectangle "Dostawca map" as maps
+rectangle "Zewnętrzny system zleceń" as zsz
+rectangle Aplikacja as app {
+    (System Notatek) as sn
+    (System Zleceń) as sz
+    (System Użytkowników) as su
+    database "Notatki" as dbn
+    database "Użytkownicy" as dbu
+    database "Zespoły" as dbz
+
+    maps -u-> sn
+    admin -r-> su
+    dbn <--> sn
+    zsz -l-> sz
+    user <-u-> sn
+    dbz <--> su
+    dbu <--> su
+    sz <-->sn
+    su <--> sn
+}
+@enduml

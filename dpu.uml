@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor "user" as u
+actor "admin" as a
+actor "zewnętrzny system zleceń" as x
+actor "dostawca map" as m
+rectangle aplikacja{
+        u -- ("dodaj notatkę") 
+        u -- ("edytuj notatkę")
+        u -- ("usuń notatkę")
+        u -- ("wyszukaj notatkę") 
+        u -- ("przypisanie notatki do zlecenia")
+        u -- ("lokalne ustawienia")
+        ("tworzenie użytkownika") -- a
+        ("tworzenie zespołu") -- a
+        ("nadawanie uprawnień") -- a
+        ("przypisanie notatki do zlecenia") -- x
+        ("dodaj notatkę") -- m
+        ("edytuj notatkę") -- m    
+        ("wyszukaj notatkę") -- m
+@enduml
