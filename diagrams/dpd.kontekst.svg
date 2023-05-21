@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="294px" preserveAspectRatio="none" style="width:556px;height:294px;" version="1.1" viewBox="0 0 556 294" width="556px" zoomAndPan="magnify"><defs><filter height="300%" id="f1vhz4hxm72pa4" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[4541fb81c80c07473fe4b07432ef0971]
+entity app--><rect fill="#FFFFFF" filter="url(#f1vhz4hxm72pa4)" height="36.2969" style="stroke: #000000; stroke-width: 1.5;" width="79" x="247.5" y="138"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="59" x="257.5" y="160.9951">Aplikacja</text><ellipse cx="479.2254" cy="156.2451" fill="#FEFECE" filter="url(#f1vhz4hxm72pa4)" rx="66.7254" ry="15.7451" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="98" x="430.2254" y="160.8935">U��ytkownik</text><ellipse cx="70.0752" cy="156.215" fill="#FEFECE" filter="url(#f1vhz4hxm72pa4)" rx="64.0752" ry="15.215" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="91" x="24.5752" y="160.8635">Administrator</text><ellipse cx="286.7758" cy="267.0552" fill="#FEFECE" filter="url(#f1vhz4hxm72pa4)" rx="68.2758" ry="16.0552" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="235.7758" y="271.7036">Dostawca map</text><ellipse cx="287.241" cy="34.6482" fill="#FEFECE" filter="url(#f1vhz4hxm72pa4)" rx="121.241" ry="26.6482" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="222" x="176.241" y="39.2966">zewn��trzny system zlece��</text><!--MD5=[c8492c9b5d19468ece93f67627a49562]
+reverse link app to user--><path d="M331.8,156 C355.78,156 385.78,156 412.43,156 " fill="none" id="app&lt;-user" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="326.78,156,335.78,160,331.78,156,335.78,152,326.78,156" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="345" y="149.0669">notatka</text><!--MD5=[bdedbc24797a94eb57a8f695495e5f77]
+link app to user--><path d="M326.72,171.84 C332.44,173.56 338.31,175.03 344,176 C374,181.11 407.88,176.06 434.19,169.76 " fill="none" id="app-&gt;user" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="439.35,168.48,429.6533,166.7554,434.4959,169.6792,431.5721,174.5219,439.35,168.48" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="345" y="172.0669">notatka</text><!--MD5=[e19721bc72fe8e9bb291660f02042507]
+link admin to app--><path d="M134.23,156 C168.96,156 211,156 242.18,156 " fill="none" id="admin-&gt;app" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="247.48,156,238.48,152,242.48,156,238.48,160,247.48,156" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="77" x="152.25" y="149.0669">konfiguracja</text><!--MD5=[85b78047abc2dd2158325402a2fc69d5]
+reverse link admin to app--><path d="M114.71,169.05 C126.49,171.93 139.26,174.55 151.25,176 C186.11,180.23 195.64,181.92 230.25,176 C235.91,175.03 241.76,173.56 247.46,171.84 " fill="none" id="admin&lt;-app" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="109.73,167.81,117.4911,173.8734,114.5807,169.0227,119.4314,166.1123,109.73,167.81" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="77" x="152.25" y="172.0669">konfiguracja</text><!--MD5=[9e570db296c9ae0d1f6f3c20a5bc057f]
+reverse link app to data--><path d="M287,179.22 C287,200.57 287,232.25 287,250.84 " fill="none" id="app&lt;-data" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="287,174.03,283,183.03,287,179.03,291,183.03,287,174.03" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="37" x="288" y="217.0669">mapa</text><!--MD5=[a7fb467946942ae5e39ae7d9d3dbd700]
+link sys to app--><path d="M287,61.14 C287,82.41 287,112.37 287,132.68 " fill="none" id="sys-&gt;app" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="287,137.88,291,128.88,287,132.88,283,128.88,287,137.88" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="52" x="288" y="104.0669">zlecenie</text><!--MD5=[fb82468b0c230193c7e26369c7ffca03]
+@startuml
+skinparam packageStyle rect
+(U��ytkownik) as user
+(Administrator) as admin
+(Dostawca map) as data
+(zewn��trzny system zlece��) as sys
+rectangle (Aplikacja) as app {
+user -l-> app: notatka
+user <-l- app: notatka
+admin -r-> app: konfiguracja
+admin <-r- app: konfiguracja
+data -u-> app : mapa
+sys -d-> app : zlecenie
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

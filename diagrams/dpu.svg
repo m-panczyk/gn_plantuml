@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="744px" preserveAspectRatio="none" style="width:633px;height:744px;" version="1.1" viewBox="0 0 633 744" width="633px" zoomAndPan="magnify"><defs><filter height="300%" id="fbpig08kqwxkz" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[a806f69bb03789151f62338a8ae81ce8]
+cluster aplikacja--><rect fill="#FFFFFF" filter="url(#fbpig08kqwxkz)" height="709" style="stroke: #000000; stroke-width: 1.5;" width="274" x="81" y="24"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="67" x="184.5" y="38.9951">aplikacja</text><ellipse cx="218.1884" cy="76.8377" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="77.1884" ry="17.8377" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="124" x="156.1884" y="81.4861">"dodaj notatk��"</text><ellipse cx="217.8678" cy="148.1736" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="78.8678" ry="18.1736" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="128" x="153.8678" y="152.822">"edytuj notatk��"</text><ellipse cx="217.9934" cy="220.1987" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="83.9934" ry="19.1987" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="140" x="147.9934" y="224.8471">"usu�� notatk��"</text><ellipse cx="217.9744" cy="293.8949" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="87.4744" ry="19.8949" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="148" x="143.9744" y="298.5433">"wyszukaj notatk��"</text><ellipse cx="218.241" cy="376.1482" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="121.241" ry="26.6482" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="222" x="107.241" y="380.7966">"przypisanie notatki do zlecenia"</text><ellipse cx="217.7712" cy="456.8542" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="82.2712" ry="18.8542" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="136" x="149.7712" y="461.5027">"lokalne ustawienia"</text><ellipse cx="217.9911" cy="534.8982" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="104.9911" ry="23.3982" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="187" x="124.4911" y="539.5466">"tworzenie u��ytkownika"</text><ellipse cx="218.1693" cy="615.1339" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="93.6693" ry="21.1339" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="162" x="137.1693" y="619.7823">"tworzenie zespo��u"</text><ellipse cx="217.8371" cy="694.1674" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="101.3371" ry="22.6674" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="179" x="128.3371" y="698.8158">"nadawanie uprawnie��"</text><!--MD5=[7d46d6cd919e02e6168a09ad91eae8b4]
+entity u--><ellipse cx="21.5" cy="226" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M21.5,234 L21.5,261 M8.5,242 L34.5,242 M21.5,261 L8.5,276 M21.5,261 L34.5,276 " fill="none" filter="url(#fbpig08kqwxkz)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="31" x="6" y="294.4951">user</text><!--MD5=[f83ae91a690dfc657e1c5fbbd818f13d]
+entity a--><ellipse cx="510" cy="584" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M510,592 L510,619 M497,600 L523,600 M510,619 L497,634 M510,619 L523,634 " fill="none" filter="url(#fbpig08kqwxkz)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="42" x="489" y="652.4951">admin</text><!--MD5=[fd07f395667725ff60a8c06b2c928ecc]
+entity x--><ellipse cx="510" cy="345" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M510,353 L510,380 M497,361 L523,361 M510,380 L497,395 M510,380 L523,395 " fill="none" filter="url(#fbpig08kqwxkz)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="222" x="399" y="413.4951">zewn��trzny system zlece��</text><!--MD5=[c617d1e94391e02d80a02faf38d11fae]
+entity m--><ellipse cx="510" cy="117" fill="#FEFECE" filter="url(#fbpig08kqwxkz)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M510,125 L510,152 M497,133 L523,133 M510,152 L497,167 M510,152 L523,167 " fill="none" filter="url(#fbpig08kqwxkz)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="100" x="460" y="185.4951">dostawca map</text><!--MD5=[c4ad4d352979bcbadd83f43e5e68253c]
+link u to "dodaj notatk��"--><path d="M26.18,216.17 C31.31,183.44 43.59,138.69 73,112 C91.96,94.79 117.93,85.68 142.6,80.96 " fill="none" id="u-&quot;dodaj notatk��&quot;" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[85584a0adf7c2725823d567b4e6104f5]
+link u to "edytuj notatk��"--><path d="M37.12,225.53 C45.59,210.54 57.65,193.62 73,183 C94.05,168.44 120.49,159.91 144.95,154.92 " fill="none" id="u-&quot;edytuj notatk��&quot;" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d838826cfa803c1a9914b1bc65734ad0]
+link u to "usu�� notatk��"--><path d="M37.12,254.22 C61.5,249.58 111.87,240 153.12,232.15 " fill="none" id="u-&quot;usu�� notatk��&quot;" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6c6dc3bdbd5d7768941be4f8d964965f]
+link u to "wyszukaj notatk��"--><path d="M37.12,259.78 C60.88,264.3 109.33,273.52 149.96,281.25 " fill="none" id="u-&quot;wyszukaj notatk��&quot;" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[fb2507b50e8073885028f095d377c85e]
+link u to "przypisanie notatki do zlecenia"--><path d="M37.2,287.69 C45.77,302.66 57.88,319.8 73,331 C89.1,342.92 108.44,351.74 127.64,358.24 " fill="none" id="u-&quot;przypisanie notatki do zlecenia&quot;" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[a97fe46984aca00790ee89b6e4eba76c]
+link u to "lokalne ustawienia"--><path d="M24.28,297.6 C28.1,334.57 39.53,388.13 73,420 C90.76,436.91 115.17,446.36 138.84,451.57 " fill="none" id="u-&quot;lokalne ustawienia&quot;" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9c95a6f783d0e465b1ce263128320174]
+link "tworzenie u��ytkownika" to a--><path d="M284.81,553.15 C350.48,571.27 447.42,598.01 488.94,609.47 " fill="none" id="&quot;tworzenie u��ytkownika&quot;-a" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[0e9b6218cdea175ce79b60de71ce33ec]
+link "tworzenie zespo��u" to a--><path d="M311.56,615 C374.54,615 452.8,615 488.96,615 " fill="none" id="&quot;tworzenie zespo��u&quot;-a" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[a379f42673cdda0fc2219ce145d0ab32]
+link "nadawanie uprawnie��" to a--><path d="M283,676.57 C348.72,658.66 447.13,631.86 488.99,620.45 " fill="none" id="&quot;nadawanie uprawnie��&quot;-a" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4c2bc7b01eb6f04b7f23c95627b86f92]
+link "przypisanie notatki do zlecenia" to x--><path d="M339.05,376 C358.84,376 379.27,376 398.8,376 " fill="none" id="&quot;przypisanie notatki do zlecenia&quot;-x" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[e7eff651219cb9e5707f947b5c7c71f0]
+link "dodaj notatk��" to m--><path d="M272.01,89.84 C299.22,96.44 332.89,104.63 363,112 C395.2,119.88 431.39,128.81 459.68,135.79 " fill="none" id="&quot;dodaj notatk��&quot;-m" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[007e0c341800f06fd17b97b3f65a0492]
+link "edytuj notatk��" to m--><path d="M297.1,148 C348.93,148 415.38,148 459.93,148 " fill="none" id="&quot;edytuj notatk��&quot;-m" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[451f96ae912ac1f4c76d86303e9507ab]
+link "wyszukaj notatk��" to m--><path d="M287.19,281.59 C311.8,275.68 339.34,267.35 363,256 C399.53,238.47 436.17,211.33 463.61,188.64 " fill="none" id="&quot;wyszukaj notatk��&quot;-m" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[40804b84c85ea82a5bb3f75ce0dbe01e]
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor "user" as u
+actor "admin" as a
+actor "zewn��trzny system zlece��" as x
+actor "dostawca map" as m
+rectangle aplikacja{
+        u - - ("dodaj notatk��") 
+        u - - ("edytuj notatk��")
+        u - - ("usu�� notatk��")
+        u - - ("wyszukaj notatk��") 
+        u - - ("przypisanie notatki do zlecenia")
+        u - - ("lokalne ustawienia")
+        ("tworzenie u��ytkownika") - - a
+        ("tworzenie zespo��u") - - a
+        ("nadawanie uprawnie��") - - a
+        ("przypisanie notatki do zlecenia") - - x
+        ("dodaj notatk��") - - m
+        ("edytuj notatk��") - - m    
+        ("wyszukaj notatk��") - - m
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>
