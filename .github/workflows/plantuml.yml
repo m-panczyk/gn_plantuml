@@ -6,31 +6,13 @@ name: Plant UML Diagram Generator
 on:
   push:
     branches: [ master ]
-
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-    #    Check to make sure the commit doesn't contain "ci-skip"
-    if: "!contains(github.event.head_commit.message, 'ci-skip')"
-    
     steps:
-    - name: Checkout Repo
-      uses: actions/checkout@v2
-      
-    - name: Generate PlantUML Diagrams
-      uses: Timmy/plantuml-action@v1
-      with:
-          # These arguments go directly to the `plantuml` command. Output directory is relative to input. Reference: https://plantuml.com/command-line
-          args: 'diagrams/*.puml -o ../output/'
-
-    - name: Commit & Push Changes
-      run: |
-        # Before attempting to commit changes, make sure something has changed
-        if [[ `git status --porcelain` ]]; then
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
-            git add output/
-            git commit -am "[ci-skip] Push changes"
-            git push
-        fi
+      - uses: actions/checkout@v2
+      - name: generate and commit diagrams
+        uses: abekoh/commit-plantuml-action@1.0.3
+        with:
+          botEmail: ${{ secrets.BOT_EMAIL }}
+          botGithubToken: ${{ secrets.token }}
+          enableReviewComment: true
