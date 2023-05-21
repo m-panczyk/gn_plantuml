@@ -5,22 +5,27 @@
 +++ Edycja notatki
 +++ Usuwanie notatki
 +++ Wyszukiwanie notatek
-++ Zarządzanie grupami
-+++ Tworzenie grupy
-+++ Usuwanie grupy
-+++ Ustawianie uprawnień grupy
-+++ Edycja członków grupy
-++++ Dodawanie użytkowników do grupy
-++++ Usuwanie użytkowników do grupy
 ++ Zarządzanie użytkownikami
 +++ Dodawanie użytkownika
 +++ Usuwanie użytkownika
 +++ Edycja użytkownika
 +++ Ustawianie uprawnień użytkownika
++++ Zarządzanie grupami
+++++ Tworzenie grupy
+++++ Usuwanie grupy
+++++ Ustawianie uprawnień grupy
+++++ Edycja członków grupy
++++++ Dodawanie użytkowników do grupy
++++++ Usuwanie użytkowników do grupy
 ++ Ustawienia aplikacji
 +++ Ustawienia lokalizacji
 +++ Ustawienia połączenia z serwerem
 +++ Ustawienia wyglądu
 +++ Przełączanie/logowanie użytkownika
 +++ Tworzenie kopii zapasowej
+++ Zarządzanie Zleceniami
++++ Import zlecenia
++++ Przypisanie użytkownika do zlecenia
++++ Usunięcie użytkownika z zlecenia
++++ Przypisanie Notatki do zlecenia
 @endwbs>
