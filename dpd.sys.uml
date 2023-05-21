@@ -12,13 +12,14 @@ rectangle Aplikacja as app {
     database "Zespoły" as dbz
 
     maps -u-> sn
-    admin -r-> su
+    admin <--> su
     dbn <--> sn
-    zsz -l-> sz
+    zsz --> sz
     user <-u-> sn
     dbz <--> su
     dbu <--> su
-    sz <-->sn
+    sz <-r->sn
     su <--> sn
+    su <--> sz
 }
 @enduml

@@ -1,0 +1,34 @@
+
+@startuml
+rectangle "Użytkownik" as user
+rectangle "Dostawca map" as maps
+rectangle Aplikacja as app {
+	rectangle "System Notatek" as sn{
+		(Dodanie Notatki) as add
+		(Usunięcie Notatki) as del
+		(Edycja Notatki) as edit
+		(Przypisanie Notatki) as assign
+		(Wyświetlenie Notatki) as show
+    }
+    (System Zleceń) as sz
+    (System Użytkowników) as su
+    database "Notatki" as dbn
+
+    user --> add :notatka
+    user <-- show :notatka na mapie
+    maps --> show :mapa
+    user --> del :notatka
+    user <--> edit :notatka
+    user <--> assign :notatka
+    add <-d-> dbn :notatka
+    del <-d-> dbn :notatka
+    edit <-d-> dbn :notatka
+    assign <-d-> dbn :notatka
+    show <-d- dbn :notatka
+    sz -u-> assign :zlecenie
+    su -u-> del :uprawnienia
+    su -u-> edit :uprawnienia
+    su -u-> show :uprawnienia
+
+}
+@enduml
