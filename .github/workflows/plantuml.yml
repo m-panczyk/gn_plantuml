@@ -1,24 +1,36 @@
-name: Generate PlantUML Diagrams
+# This is a GitHub Workflow configuration
+# Sytnax reference: https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
+
+name: Plant UML Diagram Generator
+
 on:
   push:
-    paths: ["**.puml"]
-    branches: [master]
-  workflow_dispatch:
+    branches: [ master ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
+    #    Check to make sure the commit doesn't contain "ci-skip"
+    if: "!contains(github.event.head_commit.message, 'ci-skip')"
+    
     steps:
-      - uses: actions/checkout@v3
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+      
+    - name: Generate PlantUML Diagrams
+      uses: Timmy/plantuml-action@v1
+      with:
+          # These arguments go directly to the `plantuml` command. Output directory is relative to input. Reference: https://plantuml.com/command-line
+          args: 'diagrams/*.puml -o ../output/'
 
-      - name: Generate PlantUML Diagrams
-        uses: rotaract/plantuml-action@v1
-        with:
-          format: png
-          pattern: "**.puml"
-
-      - name: Upload Diagrams
-        uses: actions/upload-artifact@v3
-        with:
-          name: diagrams
-          path: "**.png"
+    - name: Commit & Push Changes
+      run: |
+        # Before attempting to commit changes, make sure something has changed
+        if [[ `git status --porcelain` ]]; then
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add output/
+            git commit -am "[ci-skip] Push changes"
+            git push
+        fi
