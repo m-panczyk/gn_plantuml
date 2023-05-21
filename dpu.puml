@@ -18,5 +18,5 @@ rectangle aplikacja{
         ("przypisanie notatki do zlecenia") -- x
         ("dodaj notatkę") -- m
         ("edytuj notatkę") -- m    
-        ("wyszukaj notatkę") -- m
+	("przypisz notatkę") -- m
 @enduml
