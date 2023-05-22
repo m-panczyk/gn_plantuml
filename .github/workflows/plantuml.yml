@@ -1,31 +1,27 @@
 # This is a GitHub Workflow configuration
 # Sytnax reference: https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
 
-name: Plant UML Diagram Generator
-on: [push]
+on:
+  push:
+    paths:
+      - 'docs/*.puml'
 
+name: PlantUML
 jobs:
-  render_drawio:
+  generate_images:
+    name: Update images
     runs-on: ubuntu-latest
-    name: Render PlantUML files
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Render PlantUML files
-      uses: ghcr.io/racklet/render-plantuml-action@v1
-      id: render
-      with: # Showcasing the default values here
-        formats: 'png'
-        sub-dirs: '.'
-        skip-dirs: '.git'
-        # files: '' # unset, specify "dest-file:src-file" mappings here
-        log-level: 'info'
-    - name: Print the rendered files
-      run: 'echo "The following files were generated: ${{ steps.render.outputs.rendered-files }}"'
-    - uses: EndBug/add-and-commit@v7
-      with:
-        # This "special" author name and email will show up as the GH Actions user/bot in the UI
-        author_name: github-actions
-        author_email: 41898282+github-actions[bot]@users.noreply.github.com
-        message: 'Automatically render PlantUML files'
-        add: "${{ steps.render.outputs.rendered-files }}"
+      - uses: actions/checkout@master
+      - name: Generate images from diagrams
+        uses: docker://miy4/plantuml
+        with:
+          args: "*.puml "
+      - name: Commit updated diagram images
+        uses: EndBug/add-and-commit@v2.1.0
+        with:
+          message: Update PlantUML diagram images
+          path: "."
+          pattern: "*.png"
+        env:
+          GITHUB_TOKEN: ${{ secrets.token }}
