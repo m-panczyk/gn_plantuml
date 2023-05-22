@@ -7,14 +7,10 @@ rectangle Aplikacja as app {
 		(Przypisanie Notatki) as assign_n
 		(Przypisanie Użytkownika) as assign_u
     }
-    (System Notatek) as sz
-    (System Użytkowników) as su
 	
 	zsz --> assign_n
 	zsz --> assign_u
 	admin --> assign_n
 	admin --> assign_u
-	sz --> assign_n
-	su --assign_u
 }
 @enduml
