@@ -1,6 +1,5 @@
 
 @startuml
-rectangle "Admin" as admin
 rectangle "Zewnętrzny System Zleceń" as zsz
 rectangle Aplikacja as app {
 	rectangle "System Zleceń" as sz{
@@ -10,9 +9,11 @@ rectangle Aplikacja as app {
     (System Notatek) as sn
     (System Użytkowników) as su
 	
-	zsz --> assign_n
-	zsz --> assign_u
-	admin --> assign_n
-	admin --> assign_u
+    zsz --> assign_n: zlecenie
+    zsz --> assign_u: zlecenie
+
+    su --> assign_u: użytkownik
+    sn --> assign_n: notatka
+
 }
 @enduml
