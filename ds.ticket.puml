@@ -8,6 +8,7 @@ rectangle Aplikacja as app {
 		(Przypisanie Użytkownika) as assign_u
     }
     (System Notatek) as sn
+    (System Użytkowników) as su
 	
 	zsz --> assign_n
 	zsz --> assign_u
