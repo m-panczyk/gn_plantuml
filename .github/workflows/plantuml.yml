@@ -18,13 +18,12 @@ jobs:
         with:
           args: "*.puml "
       - name: Commit updated diagram images
-        uses: EndBug/add-and-commit@v2.1.0
+        uses: EndBug/add-and-commit@v9.1.3
         with:
           message: Update PlantUML diagram images
           committer_name: Github Actions
           committer_email: actions@github.com
           push: "origin master"
-          path: "."
-          pattern: "*.png"
+          add: "*.png"
         env:
           GITHUB_TOKEN: ${{ secrets.token }}
