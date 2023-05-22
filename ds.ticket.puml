@@ -4,11 +4,17 @@ rectangle "Admin" as admin
 rectangle "Zewnętrzny System Zleceń" as zsz
 rectangle Aplikacja as app {
 	rectangle "System Zleceń" as sz{
-		(Przypisanie Notatki) as assign
+		(Przypisanie Notatki) as assign_n
+		(Przypisanie Użytkownika) as assign_u
     }
     (System Notatek) as sz
-    (System Użytkowników) as su:
-
-
+    (System Użytkowników) as su
+	
+	zsz --> assign_n
+	zsz --> assign_u
+	admin --> assign_n
+	admin --> assign_u
+	sz --> assign_n
+	su --assign_u
 }
 @enduml
