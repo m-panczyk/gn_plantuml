@@ -21,6 +21,9 @@ jobs:
         uses: EndBug/add-and-commit@v2.1.0
         with:
           message: Update PlantUML diagram images
+          committer_name: Github Actions
+          committer_email: actions@github.com
+          push: "origin master"
           path: "."
           pattern: "*.png"
         env:
