@@ -9,8 +9,8 @@ rectangle Aplikacja as app {
     (System Notatek) as sn
     (System Użytkowników) as su
 	
-    zsz --> assign_n: zlecenie
-    zsz --> assign_u: zlecenie
+    zsz -u-> assign_n: zlecenie
+    zsz -u-> assign_u: zlecenie
 
     su --> assign_u: użytkownik
     sn --> assign_n: notatka

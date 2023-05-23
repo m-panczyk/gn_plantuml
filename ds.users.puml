@@ -1,34 +1,36 @@
 
 @startuml
-rectangle "Użytkownik" as user
 rectangle "Dostawca map" as maps
+rectangle "Administrator" as admin
 rectangle Aplikacja as app {
-	rectangle "System Notatek" as sn{
-		(Dodanie Notatki) as add
-		(Usunięcie Notatki) as del
-		(Edycja Notatki) as edit
-		(Przypisanie Notatki) as assign
-		(Wyświetlenie Notatki) as show
+	rectangle "System Użytkowników" as sn{
+		(Dodanie użytkownika) as add
+		(Usunięcie użytkownika) as del
+		(Edycja użytkownika) as edit
+		(Przeglądanie użytkowników) as view
+		(Ustawienie uprawnień) as perm
+		(Tworzenie zespołu) as teamadd
+		(Usuwanie zespołu) as teamdel
+		(Edycja zespołu) as teamedit
+		(Przeglądanie zespołów) as teamview
     }
     (System Zleceń) as sz
-    (System Użytkowników) as su
-    database "Notatki" as dbn
+    (System Notatek) as su
+    database "Użytkownicy" as dbu
+    database "Zespoły" as dbz
 
-    user --> add :notatka
-    user <-- show :notatka na mapie
-    maps --> show :mapa
-    user --> del :notatka
-    user <--> edit :notatka
-    user <--> assign :notatka
-    add <-d-> dbn :notatka
-    del <-d-> dbn :notatka
-    edit <-d-> dbn :notatka
-    assign <-d-> dbn :notatka
-    show <-d- dbn :notatka
-    sz -u-> assign :zlecenie
-    su -u-> del :uprawnienia
-    su -u-> edit :uprawnienia
-    su -u-> show :uprawnienia
+    add --> dbu: użytkownik
+    del --> dbu: użytkownik
+    edit --> dbu: użytkownik
+    view <-- dbu: użytkownik
+
+    perm --> dbu: uprawnienia
+    perm --> dbz: uprawnienia
+
+    teamadd --> dbz: zespół
+    teamdel --> dbz: zespół
+    teamedit --> dbz: zespół
+    teamview <-- dbz: zespół
 
 }
 @enduml
