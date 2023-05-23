@@ -1,23 +1,31 @@
 
 @startuml
-rectangle "Dostawca map" as maps
-rectangle "Administrator" as admin
-rectangle Aplikacja as app {
-	rectangle "System Użytkowników" as sn{
-		(Dodanie użytkownika) as add
-		(Usunięcie użytkownika) as del
-		(Edycja użytkownika) as edit
-		(Przeglądanie użytkowników) as view
-		(Ustawienie uprawnień) as perm
-		(Tworzenie zespołu) as teamadd
-		(Usuwanie zespołu) as teamdel
-		(Edycja zespołu) as teamedit
-		(Przeglądanie zespołów) as teamview
+    rectangle "Administrator" as admin
+    rectangle "System Użytkowników" as sn{
+	(Dodanie użytkownika) as add
+	(Usunięcie użytkownika) as del
+	(Edycja użytkownika) as edit
+	(Przeglądanie użytkowników) as view
+	(Ustawienie uprawnień) as perm
+	(Tworzenie zespołu) as teamadd
+	(Usuwanie zespołu) as teamdel
+	(Edycja zespołu) as teamedit
+	(Przeglądanie zespołów) as teamview
     }
     (System Zleceń) as sz
     (System Notatek) as su
     database "Użytkownicy" as dbu
     database "Zespoły" as dbz
+
+    admin --> add
+    admin --> del
+    admin --> edit
+    admin <-- view
+    admin --> perm
+    admin --> teamadd
+    admin --> teamdel
+    admin --> teamedit
+    admin <-- teamview
 
     add --> dbu: użytkownik
     del --> dbu: użytkownik
@@ -31,6 +39,4 @@ rectangle Aplikacja as app {
     teamdel --> dbz: zespół
     teamedit --> dbz: zespół
     teamview <-- dbz: zespół
-
-}
 @enduml
